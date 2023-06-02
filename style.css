@@ -8,7 +8,7 @@
 
 :root {
     --dark-color: #1f2937;
-    --dark-gray1: #18453B;
+    --dark-gray1: rgb(2, 73, 52);
     --light-gray1: #01411C;
     --text-colour: #b2becd;
     --prim-head: #03dac6;
@@ -66,7 +66,7 @@ img {
     width: 100%;
     position: fixed;
     z-index: 1;
-    background: linear-gradient(to bottom, rgba(1,57,25,1) 8%, rgba(0,0,0,0.3) 33%)
+    background: linear-gradient(to bottom, rgb(2, 73, 52) 8%, rgba(0,0,0,0.3) 33%)
 }
 
 
@@ -138,7 +138,7 @@ img {
     border-radius: 25px;
     padding: 10px;
     
-    background: linear-gradient(to bottom,  rgba(1,57,25,1) 19%, rgba(0,0,0,0.4) 100%);
+    background: linear-gradient(to bottom,  rgb(2, 73, 52) 10%, rgba(0,0,0,0.5) 100%);
 }
 /* 
 background: rgb(1,57,25);
@@ -220,10 +220,12 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.308) ;
     /* text-align: center; */
     transition: transform 0.2s ease-in;
+
 }
 
 .dish-apet:hover {
     transform: translateY(-15px);
+    cursor:pointer;
 }
 
 .dish-apet .apet-text {
@@ -256,6 +258,9 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
 
 .caeser-salad{
     grid-column: 2 / 3;
+}
+.taiyaki{
+    grid-column: 2/3;
 }
 
 .menu-border{
