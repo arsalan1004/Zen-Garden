@@ -8,8 +8,8 @@
 
 :root {
     --dark-color: #1f2937;
-    --dark-gray1: #12181b;
-    --light-gray1: #2a2e35;
+    --dark-gray1: #18453B;
+    --light-gray1: #01411C;
     --text-colour: #b2becd;
     --prim-head: #03dac6;
 }
@@ -46,7 +46,7 @@ p {
 
 
 .logo-and-header img{
-    width: 60px;
+    width: 80px;
     height: 60px;
 }
 
@@ -66,7 +66,7 @@ img {
     width: 100%;
     position: fixed;
     z-index: 1;
-    background: linear-gradient(0deg, #00000088  30%, #1f2937 /*#4682B4 #3d5679ec*/ 100%)
+    background: linear-gradient(to bottom, rgba(1,57,25,1) 8%, rgba(0,0,0,0.3) 33%)
 }
 
 
@@ -101,7 +101,7 @@ img {
 .navbar ul li a::after{
     content:'';
     height: 2px;
-    background: #e63946;
+    background: #018749;
     width: 0%;
     display: block;
     margin: auto;
@@ -119,21 +119,10 @@ img {
 .showcase-container{
     color: #333;
     text-align: center;
-    height: 500px;
+    height: 550px;
     
-    background: linear-gradient(0deg, #00000088  30%,#9e959531  100%),url(images/crop_rest.jpg); 
-    background-size: 100%, cover;
-    
-    
-    /* position: relative; */
-    /* backdrop-filter:50%; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%; */
-    
+    background: linear-gradient(0deg, #00000088  30%,#9e959531  100%),url(./images/Koma-Best-japanese-.jpg); 
+    background-size:cover;
 }
 .img-text{
     
@@ -149,25 +138,11 @@ img {
     border-radius: 25px;
     padding: 10px;
     
-    background: linear-gradient(
-        to bottom,
-        hsla(214.86, 68.63%, 30%, 0.52) 0%,
-        hsla(214.86, 68.63%, 28.21%, 0.543) 0.6%,
-        hsla(214.86, 68.63%, 26.4%, 0.565) 1.5%,
-        hsla(214.86, 68.63%, 24.55%, 0.586) 2.9%,
-        hsla(214.86, 68.63%, 22.66%, 0.606) 4.9%,
-        hsla(214.86, 68.63%, 20.75%, 0.624) 7.7%,
-        hsla(214.86, 68.63%, 18.81%, 0.641) 11.3%,
-        hsla(214.86, 68.63%, 16.84%, 0.657) 15.8%,
-        hsla(214.86, 68.63%, 14.83%, 0.671) 21.4%,
-        hsla(214.86, 68.63%, 12.8%, 0.684) 28.2%,
-        hsla(214.86, 68.63%, 10.74%, 0.694) 36.3%,
-        hsla(214.86, 68.63%, 8.65%, 0.703) 45.8%,
-        hsla(214.86, 68.63%, 6.53%, 0.711) 56.8%,
-        hsla(214.86, 68.63%, 4.38%, 0.716) 69.4%,
-        hsla(214.86, 68.63%, 2.2%, 0.719) 83.8%,
-        hsla(0, 0%, 0%, 0.72) 100% );
+    background: linear-gradient(to bottom,  rgba(1,57,25,1) 19%, rgba(0,0,0,0.4) 100%);
 }
+/* 
+background: rgb(1,57,25);
+background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
 
 
 .img-para{
@@ -497,8 +472,6 @@ img {
     align-self: center;
     justify-self: center;
     width: 300px;
-    
-    /* grid-column: 3 /5; */
 }
 
 /* Footer */
@@ -517,8 +490,6 @@ img {
 }
 
 .footer-container .copyright {
-    /* margin: auto;
-    padding-top: 100px; */
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 2px var(--light-gray1) dashed;
@@ -542,10 +513,6 @@ img {
 /* Tablets and under */
 
 @media(max-width: 768px) {
-    /* body{
-        display: none;
-    } */
-  
 
     .navbar {
         position: absolute;
