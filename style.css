@@ -11,7 +11,7 @@
     --dark-gray1: rgb(2, 73, 52);
     --light-gray1: #01411C;
     --text-colour: #b2becd;
-    --prim-head: #03dac6;
+    --prim-head: #b2becd;
 }
 
 body {
@@ -23,8 +23,6 @@ body {
 ul {
     list-style: none;
 }
-
-
 
 a {
     color: #fff;
@@ -140,9 +138,6 @@ img {
     
     background: linear-gradient(to bottom,  rgb(2, 73, 52) 10%, rgba(0,0,0,0.5) 100%);
 }
-/* 
-background: rgb(1,57,25);
-background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
 
 
 .img-para{
@@ -169,11 +164,8 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
 }
 
 .main__menu .menu-border{
-    
-    /* margin: auto; */
-    padding: /*15px*/ 42px;
-    padding-bottom: /*30px*/9px;
-    /* background-color: red; */
+    padding: 42px;
+    padding-bottom: 9px;
     color: var(--text-colour);
    
 }
@@ -186,17 +178,15 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
 /* Appetizer */
 .menu-item{
     padding-bottom: 10px;
-    /* border-bottom: 2px var(--light-gray1) dashed; */
 }
 
 .menu-item h1{
     font-weight: 400;
-    color: var(--prim-head);
+    color: whitesmoke;
     text-align: center;
     grid-column: 1 / 5;
     margin-top: 40px;
     margin-bottom: 10px;
-    
 }
 
 .grid {
@@ -216,9 +206,7 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     color: var(--dark-gray1);
     background-color: var(--text-colour);
     border-radius: 10px;
-    /* border-bottom: 2px #e63946 solid; */
     box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.308) ;
-    /* text-align: center; */
     transition: transform 0.2s ease-in;
 
 }
@@ -273,21 +261,14 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
 
 .about .container{
     padding: 30px;  
-    /* margin-top: -20px; */
     height:auto;
     background-color: var(--dark-gray1);
-    border-top: 2px var(--light-gray1) dashed;
-    /* gap: 10px; */
+    border-top: 2px var(--prim-head) dashed;
 }
 
 .about-card {
-
-    /* height: 400px; */
-    /* display: flex;
-    flex-direction: column; */
      width: 400px; 
     align-content: center;
-    /* justify-content: center; */
     grid-column: 3;
     grid-row: 2 / 3;
     color: var(--dark-gray1);
@@ -405,11 +386,10 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
 .contact .container {
     
     height:auto;
-  
     background-color: var(--dark-gray1);
-    border-top: 2px var(--light-gray1) dashed;
+    border-top: 2px var(--prim-head) dashed;
     padding-bottom: 40px;
-    border-bottom: 2px var(--light-gray1) dashed;
+    border-bottom: 2px var(--prim-head) dashed;
     
 }
 
@@ -454,18 +434,14 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
     grid-column: 1 / 3;  
     padding: 30px;
-    /* text-align:start;   */
- 
 }
 
 
 .contact .about-card {
     align-self: center;
     grid-column: 1 / 3;
-
 }
 
 .contact .about-card h2{
@@ -473,7 +449,6 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
 }
 
 .contact-map {
-    
     align-self: center;
     justify-self: center;
     width: 300px;
@@ -486,18 +461,16 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     align-items: center;
     padding-top: 100px;
     background-color: var(--dark-gray1);
- 
 }
 
 .footer-container > *{
     width: fit-content;
-
 }
 
 .footer-container .copyright {
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 2px var(--light-gray1) dashed;
+    border-bottom: 2px var(--prim-head) dashed;
 }
 
 .footer-container .socials{
@@ -505,7 +478,6 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     gap: 30px;
     padding-top: 30px;
     padding-bottom: 50px;
-
 }
 
 .fa-linkedin {
@@ -566,15 +538,10 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     }
 
      .grid,
-    .dish-apet
-    /* .grid,
-    .menu-item .grid,
-    .dish-apet .grid */{ 
+    .dish-apet{ 
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* display: grid;
-        grid-template-columns: 1fr; */
         width: 350px;
         
     }
@@ -589,7 +556,6 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     .caeser-salad .price{
         display: flex;
         flex-direction: column;
-        /* width: 100px; */
         margin: 0;
         padding: 0;
         margin-left: 230px;
@@ -606,7 +572,6 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     .menu-container,
     .about .container,
     .contact .container {
-        /* width: 752px; */
         width: 100%;
         
     }
@@ -649,7 +614,7 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
         position: relative;
         z-index: 100;
         height: 110px;
-        background: linear-gradient(0deg, #000000ce  20%, #1d2738 /*#4682B4 #3d5679ec*/ 100%)
+        background: linear-gradient(0deg, #000000ce  20%, #1d2738  100%)
     }
 
     .title {
@@ -694,15 +659,10 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     }
 
      .grid,
-    .dish-apet
-    /* .grid,
-    .menu-item .grid,
-    .dish-apet .grid */{ 
+    .dish-apet{ 
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* display: grid;
-        grid-template-columns: 1fr; */
         width: 340px;
         
     }
@@ -718,7 +678,6 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     }
 
     .apet-text{
-        /* display: flex; */
         text-align: start;
         align-self: flex-start;
         
@@ -752,7 +711,6 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
         flex-direction: column;
         align-self: center;
         justify-self: center;
-        /* text-align: center; */
         width: 320px;
         font-size: 15px;
         margin-left: -28px;
@@ -788,7 +746,6 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
         width: 400px;
         font-size: 14px;
         margin-left:-20px;
-        /* align-items:flex-start ; */
         
     }
 
@@ -801,7 +758,6 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     }
 
     .contact-map {
-        /* display: flex; */
         margin: 0;
         padding: 0;
         margin-left: -60px;
@@ -811,5 +767,4 @@ background: linear-gradient(90deg, rgba(1,57,25,1) 19%, rgba(0,0,0,1) 100%);*/
     .copyright {
         width: 450px;
     }
-
 }
